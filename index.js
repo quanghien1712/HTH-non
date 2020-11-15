@@ -9,7 +9,8 @@ app.get("/",(req,res) => {
 //method post
 app.post("/hello",(req,res) => {
 	var name = req.body.name;
-	res.send(`Hello ${name}`);
+	var age = req.body.age;
+	res.send(`Hello ${name} - ${age}`);
 })
 app.listen(3000,()=>{
 		console.log('Server started at port 3000');
